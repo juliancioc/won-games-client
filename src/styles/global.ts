@@ -19,5 +19,9 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${theme.font.sizes.medium};
     }
   `} 
+
+  button {
+    cursor: pointer;
+  }
 `
 export default GlobalStyles
