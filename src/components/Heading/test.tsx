@@ -19,4 +19,12 @@ describe('<Heading />', () => {
       color: '#030517' 
     })
   })
+
+  it('should render a heading with left line', () => {
+    renderWithTheme(<Heading lineLeft>Won Games</Heading>)
+
+    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
+      'border-left': '0.7rem solid #F231A5'
+    })
+  })
 })
